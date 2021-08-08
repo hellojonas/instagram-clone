@@ -1,0 +1,137 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+}
+
+.searchInput {
+  height: 2.8rem;
+  width: 21.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  background-color: var(--color-primary);
+  padding-right: 2.4rem;
+  color: var(--color-text-light);
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.placeholderWrapper {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 15rem;
+  width: 100%;
+  justify-content: center;
+  color: var(--color-text-light);
+}
+
+.placeholderWrapper:hover {
+  cursor: text;
+}
+
+.placeholder {
+  margin-left: 0.8rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.searchIconWrapper {
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  fill: var(--color-text-light);
+  height: 1rem;
+  width: 1rem;
+}
+
+.searchInput:focus {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.clearIconWrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.clearIcon {
+  fill: var(--color-text-lighter);
+  display: block;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.clearIcon:hover {
+  cursor: pointer;
+}
+
+.searchModal {
+  position: absolute;
+  top: 4.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 37.5rem;
+  height: 32.2rem;
+  padding: 1.4rem;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(219, 219, 219, 0.4);
+  background-color: var(--color-secondary);
+}
+
+.arrowUp {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  border-bottom: 7px solid var(--color-secondary);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.modalBody {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalMessage {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--color-text-light);
+  padding-bottom: 3.5rem;
+}
+
+.isTransparent {
+  color: transparent;
+}
