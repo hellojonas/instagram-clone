@@ -8,13 +8,80 @@
   flex: 0 1 61.4rem;
 }
 
-/* @media only screen and (max-width: 614px) {
+@media only screen and (min-width: 976px) {
   .feed {
-    flex: 1;
-    margin: 0 auto;
+    margin-right: 3rem;
   }
-} */
+}
 
 .aside {
+  max-width: 29.3rem;
   flex: 1;
+}
+
+.asideContent {
+  padding-top: 1.6rem;
+}
+
+.suggestions {
+  margin-top: 2.4rem;
+}
+
+.suggestionHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.suggestionTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+}
+
+.suggestionButton {
+  color: var(--color-text-dark);
+}
+
+.suggestionsList {
+  margin-top: 1.6rem;
+}
+
+.footer {
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-text-lighter);
+}
+
+.linkList {
+  list-style: none;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
+.listRow:not(:last-child) {
+  margin-bottom: 0.2rem;
+}
+
+.linkItem {
+  display: inline-block;
+  position: relative;
+}
+
+.linkItem:not(:last-child) {
+  margin-right: 0.8rem;
+}
+
+.linkItem:not(:first-child)::before {
+  content: '.';
+  margin-right: 0.4rem;
+  position: absolute;
+  bottom: 20%;
+  left: -0.6rem;
+  color: var(--color-text-lighter);
+}
+
+.copyright {
+  text-transform: uppercase;
+  margin-top: 1.6rem;
 }

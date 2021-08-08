@@ -1,0 +1,81 @@
+.suggestion {
+  display: flex;
+  align-items: center;
+}
+
+.accountPic {
+  margin-right: 0.8rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: linear-gradient(
+    to top right,
+    var(--color-story-outline-2),
+    var(--color-story-outline-1)
+  );
+}
+
+.tinLine {
+  width: 3.8rem;
+  height: 3.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+  border-radius: 100px;
+}
+
+.imageWrapper {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.accountWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.usernameWrapper {
+  margin-bottom: 0.2rem;
+}
+
+.username {
+  font-size: 1.4rem;
+  color: var(--color-text-dark);
+  font-weight: 700;
+  border-bottom: 1px solid transparent;
+}
+
+.username:hover {
+  cursor: pointer;
+  border-color: var(--color-text-dark);
+}
+
+.note {
+  font-size: 1.2rem;
+  color: var(--color-text-light);
+  font-weight: 500;
+}
+
+.actionWrapper {
+  margin-left: auto;
+}

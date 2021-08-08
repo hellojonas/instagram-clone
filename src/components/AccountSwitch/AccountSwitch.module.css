@@ -1,0 +1,40 @@
+.account {
+  display: flex;
+  align-items: center;
+}
+
+.imageWrapper {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-left: 1.6rem;
+}
+
+.username {
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+
+.fullName {
+  color: var(--color-text-light);
+  font-weight: 500;
+}
+
+.buttonWrapper {
+  margin-left: auto;
+}
