@@ -7,6 +7,10 @@ const ContainerDiv = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.6rem;
+
+  @media only screen and (max-width: 614px) {
+    padding: 0;
+  }
 `;
 
 const Container = (props: { children?: ReactNode }) => {

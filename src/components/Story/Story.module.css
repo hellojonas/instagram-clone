@@ -1,0 +1,85 @@
+.stories {
+  padding: 1.6rem;
+  border: 1px solid var(--color-border);
+  max-width: 61.4rem;
+  width: 100%;
+  display: flex;
+}
+
+/* @media screen and (max-width: 614px) {
+  .stories {
+    width: 40rem;
+  }
+} */
+
+.storyWrapper {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  flex-direction: column;
+  flex: 1;
+}
+
+.storyWrapper:not(:last-child) {
+  margin-right: 0.8rem;
+}
+
+.storyWrapper:hover {
+  cursor: pointer;
+}
+
+.outline {
+  border-radius: 100px;
+  background: linear-gradient(
+    to top right,
+    var(--color-story-outline-2),
+    var(--color-story-outline-1)
+  );
+  height: 6.4rem;
+  width: 6.4rem;
+  margin-bottom: 0.4rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tinLIne {
+  height: 6rem;
+  width: 6rem;
+  background-color: #fff;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper {
+  height: 5.6rem;
+  width: 5.6rem;
+  border-radius: 100px;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.user {
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  color: var(--color-text-dark);
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

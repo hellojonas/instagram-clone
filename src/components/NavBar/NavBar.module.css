@@ -9,6 +9,13 @@
   padding-bottom: 0.6rem;
 }
 
+@media screen and (max-width: 614px) {
+  .navWrapper {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}
+
 .navWrapper > * {
   flex: 1;
 }
