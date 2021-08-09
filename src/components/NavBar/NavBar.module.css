@@ -76,7 +76,8 @@
 }
 
 .bottomBar {
-  position: absolute;
+  position: fixed;
+  background-color: var(--color-secondary);
   z-index: 999;
   bottom: 0;
   max-width: 62rem;
