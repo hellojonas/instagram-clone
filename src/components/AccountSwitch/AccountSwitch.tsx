@@ -12,7 +12,7 @@ const AccountSwitch: React.FC<IAccountSwitchProps> = props => {
   return (
     <div className={styles.account}>
       <div className={styles.imageWrapper}>
-        <img className={styles.image} src={props.image} />
+        <img className={styles.image} src={props.image} alt={props.name} />
       </div>
 
       <div className={styles.user}>

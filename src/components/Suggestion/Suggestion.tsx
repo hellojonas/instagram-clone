@@ -24,12 +24,20 @@ const Suggestion: React.FC<ISuggestionProps> = props => {
         {props.outline ? (
           <Outline>
             <div className={styles.imageWrapper}>
-              <img src={props.image} className={styles.image} />
+              <img
+                src={props.image}
+                className={styles.image}
+                alt={props.username}
+              />
             </div>
           </Outline>
         ) : (
           <div className={styles.imageWrapper}>
-            <img src={props.image} className={styles.image} />
+            <img
+              src={props.image}
+              className={styles.image}
+              alt={props.username}
+            />
           </div>
         )}
       </div>
