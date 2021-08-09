@@ -29,4 +29,5 @@ body {
   background-color: var(--color-primary);
   font-size: 1.4rem;
   color: var(--color-text-dark);
+  overflow-x: hidden;
 }

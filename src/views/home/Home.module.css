@@ -2,6 +2,13 @@
   display: flex;
   padding-top: 3rem;
   justify-content: center;
+  padding-top: 8.5rem;
+}
+
+@media screen and (max-width: 614px) {
+  .home {
+    padding-top: 5.5rem;
+  }
 }
 
 .feed {

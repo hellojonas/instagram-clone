@@ -1,6 +1,9 @@
 .wrapper {
   border-bottom: 1px solid var(--color-border);
   background-color: var(--color-secondary);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 
 .navWrapper {
@@ -23,17 +26,23 @@
 .searchWrapper {
   display: flex;
   justify-content: center;
+  margin-right: 1.6rem;
 }
 
 .menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex: 1;
 }
 
-.menuItem {
-  margin: 0 1rem;
+.menuItem:not(:first-child) {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 614px) {
+  .menu {
+    justify-content: space-between;
+  }
 }
 
 .menuItem:hover {
@@ -67,8 +76,8 @@
 }
 
 .bottomBar {
-  /* border: 1px solid red; */
   position: absolute;
+  z-index: 999;
   bottom: 0;
   max-width: 62rem;
   width: 100%;

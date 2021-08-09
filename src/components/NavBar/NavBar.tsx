@@ -60,41 +60,43 @@ export const NavMenu = () => {
 interface AuxProps {}
 
 const NavBar: React.FC<AuxProps> = () => {
-  const isSmall = useMedia('(max-width: 620px)');
+  const isSmall = useMedia('(max-width: 614px)');
 
   return (
-    <div className={styles.wrapper}>
-      <Container>
-        <div className={styles.navWrapper}>
-          {isSmall && (
-            <div className={styles.newStory}>
-              <div className={styles.newStoryIcon}>
-                <CameraIcon />
+    <>
+      <div className={styles.wrapper}>
+        <Container>
+          <div className={styles.navWrapper}>
+            {isSmall && (
+              <div className={styles.newStory}>
+                <div className={styles.newStoryIcon}>
+                  <CameraIcon />
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
-          <div className={styles.logo}>
-            <img src={logo} alt="instagram logo" />
+            <div className={styles.logo}>
+              <img src={logo} alt="instagram logo" />
+            </div>
+
+            {!isSmall ? (
+              <div className={styles.searchWrapper}>
+                <SearchInput />
+              </div>
+            ) : null}
+
+            {!isSmall ? (
+              <NavMenu />
+            ) : (
+              <div className={styles.messenger}>
+                <div className={styles.messengerIcon}>
+                  <MessengerIcon />
+                </div>
+              </div>
+            )}
           </div>
-
-          {!isSmall ? (
-            <div className={styles.seachWrapper}>
-              <SearchInput />
-            </div>
-          ) : null}
-
-          {!isSmall ? (
-            <NavMenu />
-          ) : (
-            <div className={styles.messenger}>
-              <div className={styles.messengerIcon}>
-                <MessengerIcon />
-              </div>
-            </div>
-          )}
-        </div>
-      </Container>
+        </Container>
+      </div>
       <Container>
         {isSmall && (
           <div className={styles.bottomBar}>
@@ -102,7 +104,7 @@ const NavBar: React.FC<AuxProps> = () => {
           </div>
         )}
       </Container>
-    </div>
+    </>
   );
 };
 
