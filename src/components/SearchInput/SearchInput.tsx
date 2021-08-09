@@ -9,7 +9,7 @@ export interface ISearchInputProps {}
 
 const SearchInput: React.FC<ISearchInputProps> = props => {
   const [focus, setFocus] = useState(false);
-  const [value, setValue] = useState<String>();
+  const [value, setValue] = useState('');
   const [inputClass, setInputClass] = useState([styles.searchInput]);
   let inputRef = useRef<HTMLInputElement>(null);
 
@@ -31,10 +31,7 @@ const SearchInput: React.FC<ISearchInputProps> = props => {
   };
 
   const handleClear = () => {
-    console.log('hit');
     setValue('');
-    inputRef.current?.focus();
-    setFocus(true);
   };
 
   return (
@@ -61,6 +58,7 @@ const SearchInput: React.FC<ISearchInputProps> = props => {
           onInput={e => setValue((e.target as HTMLInputElement).value)}
           placeholder={focus ? 'Search' : ''}
           ref={inputRef}
+          value={value}
         />
 
         {focus && (
