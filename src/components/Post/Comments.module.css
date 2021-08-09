@@ -1,0 +1,118 @@
+/* Simple Comment */
+.simpleCommentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.simpleCommentWrapper:not(:last-child) {
+  margin-bottom: 0.4rem;
+}
+
+.simpleComment {
+  font-size: 1.4rem;
+  color: var(--color-text-dark);
+}
+.simpleCommentUser {
+  font-weight: 600;
+}
+.simpleCommentUser::after {
+  content: ' ';
+}
+
+.like,
+.simpleCommentLike {
+  height: 1.2rem;
+  width: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Expanded Comment */
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.imageWrapper {
+  flex: 0 0 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 1.2rem;
+}
+
+.image {
+  border-radius: 100px;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.commentWrapper {
+  flex: 1;
+}
+
+.comment {
+  /* flex: 0 0 21.6rem; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.commentText {
+  font-size: 1.4rem;
+  flex: 1;
+  color: var(--color-text-dark);
+  margin-right: 2rem;
+}
+
+.like {
+  /* flex: 1; */
+  margin-left: auto;
+}
+.like:hover,
+.simpleCommentLike {
+  cursor: pointer;
+}
+
+.username {
+  font-weight: 600;
+}
+
+.username::after {
+  content: ' ';
+}
+
+.username:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.commentBottom {
+  display: flex;
+  color: var(--color-text-light);
+  font-size: 1.2rem;
+}
+
+.time {
+  font-weight: 300;
+  margin-right: 1rem;
+}
+
+.commentActions {
+  font-weight: 600;
+  display: flex;
+}
+
+.commentActions > *:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.commentActions > *:hover,
+.time:hover {
+  cursor: pointer;
+}

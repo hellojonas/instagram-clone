@@ -4,7 +4,7 @@ const SaveIcon: React.FC<ISaveIconProps> = props => {
   return (
     <svg
       aria-label="Save"
-      fill="#8e8e8e"
+      fill="#262626"
       height="24"
       role="img"
       viewBox="0 0 48 48"

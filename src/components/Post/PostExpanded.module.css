@@ -1,0 +1,57 @@
+.post {
+  max-width: 93.5rem;
+  width: 100%;
+  display: flex;
+}
+
+.mediaWapper {
+  flex: 0 0 60rem;
+  width: 100%;
+}
+
+.media {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+}
+
+.expanded {
+  position: relative;
+  flex: 1;
+  background-color: var(--color-secondary);
+  padding-top: 6rem;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99991;
+  border-bottom: 1px solid var(--color-border);
+  width: 100%;
+}
+
+.commentWrapper {
+  padding: 0 1.6rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+
+/* .comments {
+} */
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99991;
+  width: 100%;
+}
+
+/* .stats {
+} */
+
+/* .addComment {
+} */

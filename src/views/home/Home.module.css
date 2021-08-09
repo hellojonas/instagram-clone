@@ -3,6 +3,7 @@
   padding-top: 3rem;
   justify-content: center;
   padding-top: 8.5rem;
+  padding-bottom: 4rem;
 }
 
 @media screen and (max-width: 614px) {
@@ -11,14 +12,23 @@
   }
 }
 
+.stories {
+  flex: 0 1 61.4rem;
+}
+
 .feed {
   flex: 0 1 61.4rem;
 }
 
 @media only screen and (min-width: 976px) {
-  .feed {
+  .feed,
+  .stories {
     margin-right: 3rem;
   }
+}
+
+.posts {
+  margin-top: 3rem;
 }
 
 .aside {

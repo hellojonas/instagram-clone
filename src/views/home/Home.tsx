@@ -12,6 +12,10 @@ import suggestion2 from '../../assets/img/suggetions/suggestion-2.jpg';
 import suggestion3 from '../../assets/img/suggetions/suggestion-3.jpg';
 import suggestion4 from '../../assets/img/suggetions/suggestion-4.jpg';
 import suggestion5 from '../../assets/img/suggetions/suggestion-5.jpg';
+import Post, { IPostProps } from '../../components/Post/Post';
+
+import userPic from '../../assets/img/story/story-3.jpg';
+import postMedia1 from '../../assets/img/posts/post-1.jpg';
 
 const Home = () => {
   const suggestions = [
@@ -57,11 +61,41 @@ const Home = () => {
 
   const isLarge = useMedia('(min-width: 976px)');
 
+  const post: IPostProps = {
+    username: 'daygoboyjurus',
+    userPic: userPic,
+    postMedia: postMedia1,
+    likes: 1122,
+    description:
+      'Amar é admirar com o coração.  O amor não se vê com os olhos mas com o coração.',
+    time: '7 hours ago',
+    comments: [
+      {
+        username: 'amak_20',
+        comment: 'Cuide dela :)',
+        userPic: suggestion2,
+        time: '2h',
+        likes: 7,
+      },
+      {
+        username: 'nilza_samuel',
+        comment: 'linda, lindaaaaaaa',
+        userPic: suggestion4,
+        time: '1d',
+        likes: 3,
+      },
+    ],
+  };
+
   return (
     <div>
       <main className={styles.home}>
         <section className={styles.feed}>
           <Story />
+
+          <div className={styles.posts}>
+            <Post {...post} />
+          </div>
         </section>
 
         {isLarge && (
