@@ -12,10 +12,6 @@
   }
 }
 
-.stories {
-  flex: 0 1 61.4rem;
-}
-
 .feed {
   flex: 0 1 61.4rem;
 }
@@ -29,6 +25,12 @@
 
 .posts {
   margin-top: 3rem;
+}
+
+@media only screen and (max-width: 614px) {
+  .posts {
+    margin-top: 0;
+  }
 }
 
 .aside {

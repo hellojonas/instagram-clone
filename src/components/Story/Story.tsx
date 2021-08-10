@@ -8,8 +8,7 @@ import storyImage7 from '../../assets/img/story/story-7.jpg';
 import storyImage2 from '../../assets/img/story/story-2.jpg';
 import storyImage1 from '../../assets/img/story/story-1.jpg';
 import storyImage4 from '../../assets/img/story/story-4.jpg';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
+import ScrollContainer from 'react-indiana-drag-scroll';
 
 export interface IStoryItemProps {
   user: string;
@@ -78,20 +77,18 @@ const Story: React.FC<IStoryProps> = props => {
   ];
 
   const storiesView = stories?.map(story => (
-    <SwiperSlide>
-      <StoryItem
-        user={story.username}
-        image={story.image}
-        key={story.id}
-      ></StoryItem>
-    </SwiperSlide>
+    <StoryItem
+      user={story.username}
+      image={story.image}
+      key={story.id}
+    ></StoryItem>
   ));
 
   return (
     <div className={styles.stories}>
-      <Swiper spaceBetween={0} slidesPerView={7} freeMode={true}>
+      <ScrollContainer className={styles.scrollContainer} vertical={false}>
         {storiesView}
-      </Swiper>
+      </ScrollContainer>
     </div>
   );
 };
