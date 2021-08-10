@@ -1,23 +1,23 @@
 .post {
-  max-width: 93.5rem;
-  width: 100%;
   display: flex;
 }
 
+.post,
+.post > * {
+  border: 1px solid red;
+}
+
 .mediaWapper {
-  flex: 0 0 60rem;
-  width: 100%;
+  height: 85vh;
 }
 
 .media {
-  /* display: block; */
-  width: 100%;
   height: 100%;
 }
 
 .expanded {
   position: relative;
-  flex: 1;
+  flex: 0 0 33.5rem;
   background-color: var(--color-secondary);
   padding-top: 6rem;
 }
